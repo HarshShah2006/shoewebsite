@@ -1,4 +1,5 @@
 {
+  "homepage": "https://HarshShah2006.github.io/harshshoewebsite",
   "name": "harsh-shoe-website",
   "version": "0.1.0",
   "private": true,
@@ -7,14 +8,20 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.5",
+    "build": "^0.1.4",
+    "gh-pages": "^6.1.1",
+    "install": "^0.13.0",
     "mongoose": "^8.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
+    "serve": "^14.2.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
